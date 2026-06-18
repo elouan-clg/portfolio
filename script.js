@@ -2,7 +2,7 @@ const projetNonDetail = document.querySelectorAll('.projetND');
 const projetDetaille = document.querySelectorAll('.projetDetaille');
 
 function afficheProjet(){
-    Projet_ouvert = localStorage.getItem("Projet_ouvert");
+    let Projet_ouvert = localStorage.getItem("Projet_ouvert");
     projetDetaille.forEach(leProjet => {
         if (leProjet.classList[1] == Projet_ouvert) {
             leProjet.classList.toggle('voir');
